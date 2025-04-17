@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros</title>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://kit.fontawesome.com/a4f479b1c1.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Tipografía Pixel -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #1A1F2C;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .sobre-nosotros {
+      text-align: center;
+      background: transparent;
+    }
+
+    .sobre-nosotros h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px rgba(75, 177, 248, 0.4);
+    }
+
+    .sobre-nosotros p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .dueno-section {
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: #1A1F2C;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .dueno-section:nth-of-type(even) {
+      flex-direction: row-reverse;
+      background: #1F2432;
+    }
+
+    .dueno-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
+    }
+
+    .dueno-img img {
+      width: 90%;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .dueno-img img:hover {
+      transform: scale(1.03);
+    }
+
+    .dueno-info {
+      flex: 1;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .dueno-info h4 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 6px rgba(75, 177, 248, 0.4);
+    }
+
+    .dueno-info p {
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+      color: #4BB1F8;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .dueno-section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .dueno-img img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .dueno-info h4 {
+        font-size: 1.5rem;
+      }
+
+      .dueno-info p {
+        font-size: 1rem;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Sección principal -->
+  <section class="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un equipo apasionado <em>por brindar el mejor servicio y experiencia a nuestros clientes.</em> Creemos en el trabajo en equipo, la dedicación y el compromiso con nuestra comunidad. Nos destacamos por ofrecer un servicio personalizado que satisface las necesidades de cada cliente.</p>
+  </section>
+
+  <!-- Dueños -->
+  <section class="dueno-section">
+    <div class="dueno-img">
+      <img src="008-382x1024.png" alt="Martín Gómez" />
+    </div>
+    <div class="dueno-info">
+      <h4>Martín Gómez</h4>
+      <p>Co-fundador. Especialista en atención al cliente y gestión del local. Con más de 10 años de experiencia en el sector, Martín es el alma de nuestro equipo, garantizando siempre una atención excepcional.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dueno-section">
+    <div class="dueno-img">
+      <img src="moda-mujer-joven-alegre_329181-3536.avif" alt="Lucía Ramírez" />
+    </div>
+    <div class="dueno-info">
+      <h4>Lucía Ramírez</h4>
+      <p>Co-fundadora. Encargada de marketing y diseño de productos. Con una visión creativa y un enfoque centrado en el cliente, Lucía crea campañas que resuenan profundamente con nuestra audiencia.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dueno-section">
+    <div class="dueno-img">
+      <img src="008-382x1024.png" alt="Julián Pérez" />
+    </div>
+    <div class="dueno-info">
+      <h4>Julián Pérez</h4>
+      <p>Administrador y encargado de logística y proveedores. Julián se asegura de que nuestra operación diaria funcione sin problemas, gestionando proveedores y supervisando cada detalle con precisión.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script partículas -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "size": { "value": 3 },
+        "color": { "value": "#4BB1F8" },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#4BB1F8",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

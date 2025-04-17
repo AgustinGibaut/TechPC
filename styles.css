@@ -37,10 +37,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
+  
   .navbar-brand {
     font-weight: bold;
     font-size: 1.6rem;
-    color: #fff !important;
+    color: #000000 !important;
     text-shadow: 0 0 5px #4BB1F8;
   }
   
