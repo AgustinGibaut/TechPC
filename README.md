@@ -1,4 +1,7 @@
-
+<!-- Snake Game -->
+<p align="center"> 
+  <img src="https://github.com/7oSkaaa/7oSkaaa/blob/output/github-contribution-grid-snake.svg?username=AgustinGibaut" alt="Snake Game"/> 
+</p>
 ## Tecnologías utilizadas
 
 - **HTML5**: Para estructurar el contenido de la web.
